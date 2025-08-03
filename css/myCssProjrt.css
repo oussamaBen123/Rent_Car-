@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  background: url(/css/img/home-2.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 112%;
+  width: 100%;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+   padding-top: 12px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: ease-in-out .3s;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 70px;
+  padding: 0 5px;
+}
+.navbar img {
+  height: 36px;
+  width: 88px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #111827;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.navbar ul li {
+  list-style: none;
+  position: relative;
+}
+.navbar ul li i {
+  color: #111827;
+  font-size: 30px;
+  margin-left: -15px;
+  padding: 5px 7px;
+}
+.navbar ul li .btn {
+  background-color: #111827;
+  color: white;
+  padding: 13px 30px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.navbar ul .myBtn {
+  transition: ease-in-out 0.1s;
+}
+.navbar ul .myBtn:hover {
+  transform: translateY(-2px);
+}
+
+.navbar ul li span {
+  background-color: black;
+  color: white;
+  padding: 0 3px;
+  border-radius: 50%;
+  font-size: 13px;
+  position: absolute;
+  top: 1px;
+  right: 2px;
+}
+.container .title h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 55px;
+  letter-spacing: 2px;
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container .title {
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainContainer {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+.searchForm {
+  height: 154px;
+  width: 85%;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+.searchForm form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+}
+.select {
+  height: 43px;
+  width: 240px;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  color: #2d3748;
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #c5c5c5;
+  font-size: 14px;
+}
+.labelsForm {
+  font-weight: 500;
+}
+.icon i {
+  padding-right: 20px;
+  color: #c9c9c9;
+}
+.choice {
+  height: auto;
+  width: 250px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #2d3748;
+  margin-top: 10px;
+  border-radius: 3px;
+  /* display: none; */
+  position: fixed;
+  transition: ease-in-out .3s;
+}
+.choice span {
+  transition: ease-in-out 300ms;
+  padding: 15px 0 15px 15px;
+  cursor: pointer;
+  color: #111827;
+}
+.choice span:hover {
+  background-color: #e4e4e4;
+}
+.choice .search {
+  width: 100%;
+  height: 35px;
+}
+
+.choice .search input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  outline: none;
+  padding-left: 10px;
+  color: #e2e8f0;
+}
+.mainContainer .searchForm form button {
+  height: 43px;
+  width: 140px;
+  margin-top: 20px;
+  border: none;
+  background-color: #111827;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
