@@ -18,6 +18,9 @@ body {
   height: 112%;
   width: 100%;
 }
+.respTitle{
+  display: none;
+}
 header {
   width: 100%;
   display: flex;
@@ -111,8 +114,9 @@ header {
 }
 .searchForm {
   height: 154px;
-  width: 85%;
+  width: auto;
   position: absolute;
+  padding-inline: 20px;
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -121,6 +125,7 @@ header {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   z-index: 10;
   display: flex;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 .searchForm form {
@@ -169,7 +174,7 @@ header {
   color: #2d3748;
   margin-top: 10px;
   border-radius: 3px;
-  /* display: none; */
+  display: none;
   position: fixed;
   transition: ease-in-out .3s;
 }
